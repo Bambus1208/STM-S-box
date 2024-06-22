@@ -1,5 +1,7 @@
 # STM S-Box
-This repository contains implementations from my bachelor thesis on Self-Timed Masked S-Boxes. The aim is to provide secure cryptographic operations resistant to side-channel attacks.
+This repository contains implementations from my bachelor thesis titled "A Proper Evaluation of Self-Timed Masking." The main goal of this thesis is to thoroughly investigate the security provided by Self-Timed Masking (STM) techniques. Self-Timed Masking is an advanced cryptographic technique designed to improve the resistance of cryptographic operations to side-channel attacks, in particular to power analysis attacks such as Differential Power Analysis (DPA).
+
+In this repository you will find several implementations that demonstrate the use of STM in cryptographic S-boxes. These implementations are tested and evaluated using side-channel analysis (SCA) techniques to measure their effectiveness against these attacks. 
 
 ## Usage 
 
