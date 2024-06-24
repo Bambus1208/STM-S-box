@@ -1,5 +1,5 @@
-# STM S-Box
-This repository contains implementations from my bachelor thesis titled "A Proper Evaluation of Self-Timed Masking." The main goal of this thesis is to thoroughly investigate the security provided by Self-Timed Masking (STM) techniques. Self-Timed Masking is an advanced cryptographic technique designed to improve the resistance of cryptographic operations to side-channel attacks, in particular to power analysis attacks such as Differential Power Analysis (DPA).
+# STM S-box
+This repository contains implementations from my bachelor thesis titled "A Proper Evaluation of Self-Timed Masking." The main goal of this thesis is to thoroughly investigate the security provided by Self-Timed Masking (STM)[SBB+22] techniques. Self-Timed Masking is an advanced cryptographic technique designed to improve the resistance of cryptographic operations to side-channel attacks, in particular to power analysis attacks such as Differential Power Analysis (DPA).
 
 In this repository you will find several implementations that demonstrate the use of STM in cryptographic S-boxes. These implementations are tested and evaluated using side-channel analysis (SCA) techniques to measure their effectiveness against these attacks. 
 
@@ -37,13 +37,13 @@ In this repository you will find several implementations that demonstrate the us
 
 ## Related Works
 
-### aes-dom
-[DOM](https://github.com/hgrosz/aes-dom) Protected Hardware Implementation of AES by Hannes Gross.
+### aes-dom [GMK16]
+[DOM](https://github.com/hgrosz/aes-dom) Protected Hardware Implementation of AES by Hannes Gross. The paper is [GMK16](https://eprint.iacr.org/2016/486.pdf).
 
 ### PRNG
 [Trivium](https://github.com/uclcrypto/randomness_for_hardware_masking/blob/main/Unrolled%20Stream%20Ciphers/Trivium.vhd) as a PRNG by Thorben Moos.
 
-### Self-Timed Masking
+### Self-Timed Masking [SBB+22]
 This work is based on the paper [Self-Timed Masking](https://eprint.iacr.org/2022/641.pdf) by Mateus Simões, Lilian Bossuet, Nicolas Bruneau, Vincent Grosso, Patrick Haddad, and Thomas Sarno.
 
 ## Contributing
