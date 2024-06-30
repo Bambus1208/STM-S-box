@@ -1011,8 +1011,8 @@ module DOM_GF_MULS_2 (
 endmodule
 
 module MUL_4 (
-    input [7:0] A,
-    input [7:0] B,
+    input  [7:0] A,
+    input  [7:0] B,
     output [7:0] C
 );
    (* keep = "true" *) wire [3:0] ph, pl, p;
@@ -1452,7 +1452,7 @@ endmodule
 module dff(
     input trigger,
     input reset,
-    input [5:0] d,
+    input [15:0] d,
     output reg [15:0] q
 );
     always @(posedge trigger) begin
@@ -1468,7 +1468,7 @@ module inverterchain  #(
     parameter delay = 200
 ) 
 (
-    input inp,
+    input  inp,
     output ack
 );
     (* keep = "true" *) wire [delay:0] inverterchain;
