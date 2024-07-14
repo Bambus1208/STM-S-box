@@ -257,7 +257,7 @@ module n_strong_indicating_latch_0 (
     // Second level reduction: 34 inputs to 17 outputs  
     (* keep = "true" *) wire [16:0] s0_out;
     generate
-        for (i=0; i<16; i=i+1) begin            
+        for (i=0; i<17; i=i+1) begin            
             (* keep = "true" *) muller_c_elem c_elem (
                 .a(nor_out[2*i]), 
                 .b(nor_out[2*i+1]), 
@@ -266,7 +266,6 @@ module n_strong_indicating_latch_0 (
             );
         end
     endgenerate
-    assign s0_out[16] = nor_out[33];
 
     // Third level reduction: 17 inputs to 9 outputs  
     (* keep = "true" *) wire [8:0] s1_out;
